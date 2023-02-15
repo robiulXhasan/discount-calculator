@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>discount-calculator</title>
+    <script src="https://kit.fontawesome.com/1addb97798.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+</head>
+
+<body>
+    <header class="w-3/4 mx-auto">
+        <h1 class="text-5xl text-center my-10">Discount calcu<span class=" text-purple-400 font-semibold">lator</span>
+            <span class="text-red-500 font-medium">of a product</span>
+        </h1>
+    </header>
+    <main>
+        <div class="w-3/4 mx-auto grid sm:grid-cols-1 md:grid-cols-2 gap-5 ">
+            <div class="mx-auto rounded-lg bg-pink-300 border relative sm:w-100 md:w-3/4">
+                <img src="./shirt.jpg" class="rounded-t-lg " alt="">
+                <button class="bg-pink-500 px-3 py-1 rounded absolute top-0 text-white font-medium">30% off</button>
+                <div class="details px-2 py-3  mb-100">
+                    <h2 class="text-xl text-white" id="product-name">Button cotton shirt</h2>
+                    <h3 class="text-xl text-white">Price : <span id="product-price">1000</span> Tk</h3>
+                    <input type="text" id="discount-input" class="w-3/5 px-2 py-1 mb-4 rounded "
+                        placeholder="Type disc30 for 30% discount ">
+                    <button id="cart-button"
+                        class="bg-red-600 font-medium text-white sm:ml-0 md:ml-2 px-5 py-1 rounded hover:bg-white hover:text-red-600 ">Add
+                        to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+            <div class="shopping-cart ">
+                <h1 class="bg-pink-300 text-2xl py-1 mb-5 font-medium text-center text-white">Your Shopping Cart <i
+                        class="fa-solid fa-cart-shopping"></i> </h1>
+                <h3 class="text-xl mb-4">Your purchase details:-</h3>
+                <h3 class="text-xl">Price : <span id="price-in-cart" class="ml-20"></span> </h3>
+                <h3 class="text-xl">Discount : <span id="discount-price" class="ml-12"></span></h3>
+                <h3 class="text-xl">Total Payable : <span id="total-payable" class="ml-2"></span></h3>
+                <div class="text-center mt-5">
+                    <button
+                        class="bg-pink-400 font-medium text-white text-center px-10 py-2 rounded hover:bg-white hover:text-pink-400  border hover:border-pink-400">Buy
+                        Now <i class="fa-solid fa-arrow-right"></i></button>
+
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
